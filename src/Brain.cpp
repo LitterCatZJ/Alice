@@ -292,7 +292,7 @@ Brain::less36_decesion_tree(const ActionStatePair path)
 
     const double targetBall_dist_goal =targetBall.dist(ServerParam::i().theirTeamGoalPos());
 
-    int spent_time= first_action.category()==CooperativeAction::Dribble?first_action.durationStep():0;
+    int spent_time= 0;  /*first_action.category()==CooperativeAction::Dribble?first_action.durationStep():0;*/
 
     double  opp_dist_target_ball = FieldAnalyzer::get_opponent_dist(state,targetBall,spent_time,3);
     double  opp_dist_current_ball= FieldAnalyzer::get_opponent_dist(state,currentBall,0,3);
@@ -426,7 +426,7 @@ Brain::over36_decesion_tree(const ActionStatePair path)
     const Vector2D  currentBall=state.current_wm()->ball().pos();
 
 
-    int spent_time= first_action.category()==CooperativeAction::Dribble?first_action.durationStep():0;
+    int spent_time= 0;  /*first_action.category()==CooperativeAction::Dribble?first_action.durationStep():0;*/
 
     double  opp_dist_target_ball = FieldAnalyzer::get_opponent_dist(state,targetBall,spent_time,3);
     double  opp_dist_current_ball= FieldAnalyzer::get_opponent_dist(state,currentBall,0,3);
