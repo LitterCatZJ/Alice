@@ -23,7 +23,7 @@ export LD_LIBRARY_PATH
 host="localhost"
 port=6000
 coach_port=6002
-teamname="Miracle2017"
+teamname="Alice"
 
 player="./@PLAYER@"
 coach="./@COACH@"
