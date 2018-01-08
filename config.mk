@@ -14,7 +14,7 @@ Dst_ObjPath =   $(Dst_Top)/.bulidpack
 Dst_SrcObj  =   $(Dst_ObjPath)/src
 Dst_RcscObj =   $(Dst_ObjPath)/rcsc
 
-Dst_Path    =   $(Dst_Top)/Miracle2017-EXE
+Dst_Path    =   $(Dst_Top)/Alice-Bin
 
 player_target   =   $(Dst_Path)/$(Player_Name)
 coach_target    =   $(Dst_Path)/$(Coach_Name)
@@ -25,8 +25,8 @@ config_target   =   update_data
 #####################
 
 
-GCC             =   gcc -std=c++11
-GXX             =   g++ -std=c++11
+GCC             =   gcc 
+GXX             =   g++
 
 CFLAGS          =   -O -Wall -W -pipe \
                     -MMD -MP -MF "$(@:%.o=%.d)" -MT "$(@:%.o=%.d)" -MT "$@"

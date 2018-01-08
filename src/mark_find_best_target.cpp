@@ -1,6 +1,6 @@
 /*
  * CopyRight(C)  YongDeng
- *
+ *All Rights Reserved
  * 2016-
  */
 
